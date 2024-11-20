@@ -1,5 +1,5 @@
 const app = () => {
-  const socket = io('http://localhost:3000');
+  const socket = io('https://extraordinary-unity.railway.app');
   const msgInput = document.querySelector('.message-input');
   const msgList = document.querySelector('.messages-list');
   const sendBtn = document.querySelector('.send-btn');
