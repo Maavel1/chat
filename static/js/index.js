@@ -8,7 +8,7 @@ const app = () => {
 
   const getMessages = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/api/chat');
+      const { data } = await axios.get('https://extraordinary-unity.railway.app/chat');
 
       renderMessages(data);
 
