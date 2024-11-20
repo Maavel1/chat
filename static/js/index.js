@@ -1,5 +1,5 @@
 const app = () => {
-  const socket = io('https://extraordinary-unity.railway.app');
+  const socket = io('https://extraordinary-unity-production.up.railway.app');
   const msgInput = document.querySelector('.message-input');
   const msgList = document.querySelector('.messages-list');
   const sendBtn = document.querySelector('.send-btn');
@@ -8,7 +8,7 @@ const app = () => {
 
   const getMessages = async () => {
     try {
-      const { data } = await axios.get('https://extraordinary-unity.railway.app/chat');
+      const { data } = await axios.get('https://extraordinary-unity-production.up.railway.app/chat');
 
       renderMessages(data);
 
